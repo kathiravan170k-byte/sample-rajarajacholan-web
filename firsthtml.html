@@ -1,4 +1,4 @@
-21<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,11 +14,12 @@
 </head>
 
 <body>
-
-    <center>
+    <header>
+        <center>
         <h1><strong>Rajaraja Cholan</strong></h1>
-    </center>
-
+        </center>
+    </header>
+    <main>
     <p>
         <br>
         <em>&lt;This is a simple HTML page about Rajaraja Cholan.&gt;</em>
@@ -58,7 +59,7 @@
             <img src="1.webp"
                  alt="Rajaraja Cholan Temple"
                  width="300"
-                 height="300">
+                 height="300" loading="lazy">
             <figcaption>Rajaraja Cholan Temple</figcaption>
         </figure>
 
@@ -121,21 +122,101 @@
             <img src="madan.webp"
                  alt="Madan Gowri talking about Rajaraja Cholan"
                  width="300"
-                 height="300">
+                 height="300" loading="lazy">
 
             <figcaption>
                 Madan Gowri tells about Rajaraja Cholan
             </figcaption>
         </figure>
     </section>
+    <aside>
+        <details>
+            <summary><mark>Did You Know?</mark></summary>
+            <p>
+                Rajaraja Cholan was a great patron of art and architecture.
+                He commissioned the construction of the Brihadeshwara Temple
+                in Thanjavur, which is now a UNESCO World Heritage Site.
+            </p>
+        </details>
+    </aside>
+        <table border="1" cellpadding="10" cellspacing="5">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Event</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr scope="row">
+                    <td scope="col">985 CE</td>
+                    <td scope="col">Rajaraja Cholan ascends the throne of the Chola dynasty.</td>
+                </tr>
+                <tr>
+                    <td scope ="row">993 CE</td>
+                    <td scope ="row">He launches a naval campaign and invades Sri Lanka.</td>
+                </tr>
+                <tr>
+                    <td scope="row">1004 CE</td>
+                    <td scope="row">Rajaraja Cholan completes the construction of the Brihadeshwara Temple in Thanjavur.</td>
+                </tr>
+                <tr>
+                    <td scope="row">1014 CE</td>
+                    <td scope="row">Rajaraja Cholan passes away, leaving behind a powerful and prosperous empire.</td>
+                </tr>
+            </tbody>
 
+        </table>
+    
+    
+    </main>
+    <label for="fname">firstname</label>
+    <input type="text" id="fname" name="fname" placeholder="Your name..">
+    <label for="lname">lastname</label>
+    <input type="text" id="lname" name="lname" placeholder="Your last name..">
+ <label for="phone-no">Phone Number</label>
+<input type="tel" id="phone-no" name="phone-no" placeholder="Your phone number.." required maxlength="10" pattern="[0-9]{10}" title="Please enter a 10-digit phone number">
+<label for="tele">num</label>
+<input type="number" id="tele" name="tele" placeholder="Your telephone number.." required min =1 max="10" title="Please enter a 10-digit telephone number" default value="10" >
+<label for="course">Course</label>
+<select id="course" name="course" required>
+    <option value="cs">Computer Science</option>
+    <option value="it">Information Technology</option>
+    <option value="ee">Electrical Engineering</option>
+    <option value="me">Mechanical Engineering</option>
+</select>
+
+<fieldset>
+    <legend>Choose your favorite food:</legend>
+<p>
+<input type="checkbox" id="food1" name="food" value="pizza">
+<label for="food1">Pizza</label>
+<input type="checkbox" id="food2" name="food" value="burger">
+<label for="food2">Burger</label>
+<input type="checkbox" id="food3" name="food" value="pasta">
+<label for="food3">Pasta</label>
+</p>  
+</fieldset>
+<fieldset>
+    <legend>Choose your gender:</legend>
+    <p>
+     <label for="gender">Gender</label> 
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="female">
+    </p>
+    </fieldset>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Your message.."></textarea>
+    <button type="submit">Submit</button>
+    <footer>
     <nav>
         <a href="#1"><button type="button">🛡️ Titles</button></a>
         <a href="#2"><button type="button">🏛️ Achievements</button></a>
         <a href="#3"><button type="button">📜 Key Terms</button></a>
         <a href="#4"><button type="button">🔗 Learn More</button></a>
+        <a href="#">back to top</a>
     </nav>
-
+    </footer>
 </body>
 
 </html>
